@@ -1,0 +1,28 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "build-gh-pages": "gh-pages -d build",
+    "deploy": "npm run build && npm run build-gh-pages"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "del": "^6.0.0",
+    "gh-pages": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-uglify-es": "^3.0.0"
+  },
+  "author": "Ina Kurets",
+  "license": "ISC"
+}
