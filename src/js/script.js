@@ -80,7 +80,7 @@ const successRenderHtml = (data) => {
           <h2 class="success-block__title">${data.title}</h2>
           <div class="success-block__subtitle">${data.text}</div>
         </div>
-        <p class="success-block__text">Have an account? <a class="success-block__link" href="/">Login</a></p>
+        <p class="success-block__text">Have an account? <a class="success-block__link" href="https://inakurets2021.github.io/test/">Login</a></p>
       </div>
     </div> 
   `;
