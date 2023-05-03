@@ -108,17 +108,6 @@ form.addEventListener("submit", (event) => {
     })
     inputs.forEach(el => el.value = '')
   }
-
-
 });
 
 
-//SVG image animation
-new Vivus(
-  'form-container__svg',
-  {
-    type: 'oneByOne',
-    duration: 600,
-    animTimingFunction: Vivus.EASE
-  },
-);

@@ -327,6 +327,24 @@ body {
 	right: 0;
 }
 
+#form-container__svg path {
+	fill: none;
+	stroke: #f9faff;
+	stroke-width: 2px;
+	stroke-dasharray: 3811px;
+	stroke-dashoffset: 3811px;
+	animation: svgAnimated 10s ease forwards;
+}
+
+@keyframes svgAnimated {
+	to {
+		stroke-dashoffset: 0;
+		fill: #f9faff;
+		stroke: none;
+	}
+}
+
+
 /* Media */
 @media (max-width: 768px) {
 	.form__container {
