@@ -1,3 +1,3 @@
 # Репозиторий  для тестового задания на должность верстальщика
 
-https://inakurets2021.github.io/test/
+https://inakurets2021.github.io/test/ 
