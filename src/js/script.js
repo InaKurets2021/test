@@ -49,7 +49,7 @@ const validate = () => {
 
   if (passwordValue == "") {
     error(passwordInput, "Password can't be blank ");
-  }else if (REG_EXP_PASSWORD.test(passwordValue) == false) {
+  } else if (REG_EXP_PASSWORD.test(passwordValue) == false) {
     error(passwordInput, "Enter the correct password");
   } else if (passwordValue !== confirmPasswordValue) {
     error(passwordInput, "Password doesnt match");
@@ -58,7 +58,7 @@ const validate = () => {
   }
   if (confirmPasswordValue == "") {
     error(confirmPasswordInput, "Confirm Password can't be blank");
-  }  else if (REG_EXP_PASSWORD.test(confirmPasswordValue) == false) {
+  } else if (REG_EXP_PASSWORD.test(confirmPasswordValue) == false) {
     error(confirmPasswordInput, "Enter the correct confirm password");
   } else if (confirmPasswordValue != passwordValue) {
     error(confirmPasswordInput, "Password doesnt match");
@@ -71,3 +71,14 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   validate();
 });
+
+
+//SVG image animation
+new Vivus(
+  'form-container__svg',
+  {
+    type: 'oneByOne',
+    duration: 600,
+    animTimingFunction: Vivus.EASE
+  },
+);
